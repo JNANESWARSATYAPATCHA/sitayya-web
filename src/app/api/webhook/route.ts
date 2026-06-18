@@ -58,12 +58,12 @@ export async function POST(request: NextRequest) {
     const entry = body.entry?.[0];
     const changes = entry?.changes?.[0];
     const value = changes?.value;
-    const messages = value?.messages;
 
-    if (!messages || messages.length === 0) {
-      return new Response('Event received', { status: 200 });
+    if (value?.statuses || !value?.messages || value.messages.length === 0) {
+      return new Response('Status update received', { status: 200 });
     }
 
+    const messages = value.messages;
     const message = messages[0];
     
     if (message.type !== 'text') {
