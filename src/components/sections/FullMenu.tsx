@@ -6,12 +6,23 @@ import { FULL_MENU } from "@/constants/menu";
 import { useLanguage } from "@/components/ui/LanguageContext";
 import RevealCard from "@/components/ui/RevealCard";
 
-const categories = ["Starters", "Curries", "Biryanis", "Pulaos", "Fried Rice"] as const;
+const categories = [
+  "Soups",
+  "Veg Starters",
+  "Non-Veg Starters",
+  "Prawn & Fish",
+  "Tandoori",
+  "Veg Curries",
+  "Non-Veg Curries",
+  "Naan - Roties",
+  "Biryani",
+  "Fried Rice & Noodles",
+] as const;
 
 type Category = (typeof categories)[number];
 
 export default function FullMenu() {
-  const [activeCategory, setActiveCategory] = useState<Category>("Biryanis");
+  const [activeCategory, setActiveCategory] = useState<Category>("Biryani");
   const { language } = useLanguage();
 
   const activeItems = useMemo(() => {

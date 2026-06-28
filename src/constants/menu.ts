@@ -26,127 +26,162 @@ export const SIGNATURE_DISHES = [
 
 export const FULL_MENU = [
   {
-    category: "Starters",
+    category: "Soups",
     items: [
-      {
-        name: "Apollo Fish",
-        nameTe: "అపోలో ఫిష్",
-        imageUrl:
-          "https://images.unsplash.com/photo-1626074353765-517a681e40be?q=80&w=2000&auto=format&fit=crop",
-        description:
-          "Boneless fish chunks marinated in fiery spices, deep-fried and tossed in a tangy yogurt sauce.",
-        price: "₹320",
-      },
-      {
-        name: "Guntur Chilli Chicken",
-        nameTe: "గుంటూరు చిల్లీ చికెన్",
-        imageUrl:
-          "https://images.unsplash.com/photo-1623653387945-2fd25214f8fc?q=80&w=2000&auto=format&fit=crop",
-        description:
-          "Crispy fried chicken tossed generously with fierce Guntur red chillies and curry leaves.",
-        price: "₹290",
-      },
+      { name: "Veg Sweet Corn Soup", price: "₹90", imageUrl: "/images/placeholder-soup.jpg" },
+      { name: "Veg Mushroom Soup", price: "₹100", imageUrl: "/images/placeholder-soup.jpg" },
+      { name: "Veg Hot & Sour Soup", price: "₹90", imageUrl: "/images/placeholder-soup.jpg" },
+      { name: "Chicken Sweet Corn Soup", price: "₹110", imageUrl: "/images/placeholder-soup.jpg" },
+      { name: "Chicken Manchow Soup", price: "₹120", imageUrl: "/images/placeholder-soup.jpg" },
+      { name: "Chicken Hot & Sour Soup", price: "₹120", imageUrl: "/images/placeholder-soup.jpg" },
     ],
   },
   {
-    category: "Curries",
+    category: "Veg Starters",
     items: [
-      {
-        name: "Royyala Iguru",
-        nameTe: "రొయ్యల ఇగురు",
-        imageUrl:
-          "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?q=80&w=2000&auto=format&fit=crop",
-        description:
-          "A thick, spicy Andhra-style prawns roast cooked slowly with caramelized onions, tomatoes, and home-ground masala.",
-        price: "₹380",
-      },
-      {
-        name: "Paneer Butter Masala",
-        nameTe: "పనీర్ బటర్ మసాలా",
-        imageUrl:
-          "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?q=80&w=2000&auto=format&fit=crop",
-        description:
-          "Soft cottage cheese cubes simmered in a rich, buttery tomato gravy with a hint of fenugreek.",
-        price: "₹260",
-      },
-      {
-        name: "Kaju Tomato Curry",
-        nameTe: "కాజు టొమాటో కర్రీ",
-        imageUrl:
-          "https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=2000&auto=format&fit=crop",
-        description:
-          "Roasted cashew nuts cooked in a sweet and tangy tomato-onion base.",
-        price: "₹280",
-      },
+      { name: "Chilli Paneer & Manchurian", price: "₹250", imageUrl: "/images/placeholder-veg-starter.jpg" },
+      { name: "Dragon Paneer", price: "₹280", imageUrl: "/images/placeholder-veg-starter.jpg" },
+      { name: "Schezwan Paneer", price: "₹260", imageUrl: "/images/placeholder-veg-starter.jpg" },
+      { name: "Paneer Majestic", price: "₹260", imageUrl: "/images/placeholder-veg-starter.jpg" },
+      { name: "Chilli Mushroom", price: "₹200", imageUrl: "/images/placeholder-veg-starter.jpg" },
+      { name: "Mushroom Manchurian", price: "₹200", imageUrl: "/images/placeholder-veg-starter.jpg" },
+      { name: "Dragon Mushroom", price: "₹220", imageUrl: "/images/placeholder-veg-starter.jpg" },
+      { name: "Veg Manchurian", price: "₹170", imageUrl: "/images/placeholder-veg-starter.jpg" },
+      { name: "Crispy Baby Corn", price: "₹200", imageUrl: "/images/placeholder-veg-starter.jpg" },
+      { name: "Chilli Baby Corn", price: "₹200", imageUrl: "/images/placeholder-veg-starter.jpg" },
+      { name: "Dragon Baby Corn", price: "₹210", imageUrl: "/images/placeholder-veg-starter.jpg" },
+      { name: "Crispy Corn", price: "₹200", imageUrl: "/images/placeholder-veg-starter.jpg" },
+      { name: "Baby Corn Manchurian", price: "₹200", imageUrl: "/images/placeholder-veg-starter.jpg" },
     ],
   },
   {
-    category: "Biryanis",
+    category: "Non-Veg Starters",
     items: [
-      {
-        name: "Gongura Mutton Biryani",
-        nameTe: "గోంగూర మటన్ బిర్యానీ",
-        imageUrl:
-          "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=2000&auto=format&fit=crop",
-        description:
-          "Slow-cooked mutton and tangy gongura layered with aromatic basmati, sealed for a deep, regal finish.",
-        price: "₹450",
-      },
-      {
-        name: "Ulavacharu Chicken Biryani",
-        nameTe: "ఉలవచారు చికెన్ బిర్యానీ",
-        imageUrl:
-          "https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=2000&auto=format&fit=crop",
-        description:
-          "Velvety ulavacharu gravy folded into fragrant rice with tender chicken and a ghee-laced glaze.",
-        price: "₹390",
-      },
-      {
-        name: "Chicken Fry Piece Biryani",
-        nameTe: "చికెన్ ఫ్రై పీస్ బిర్యానీ",
-        imageUrl:
-          "https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?q=80&w=2000&auto=format&fit=crop",
-        description:
-          "Fluffy dum biryani rice served generously with spicy, crispy pan-fried chicken pieces.",
-        price: "₹380",
-      },
+      { name: "Lemon Chicken", price: "₹260", imageUrl: "/images/placeholder-non-veg-starter.jpg" },
+      { name: "Chicken Majestic", price: "₹260", imageUrl: "/images/placeholder-non-veg-starter.jpg" },
+      { name: "Chicken 65", price: "₹240", imageUrl: "/images/placeholder-non-veg-starter.jpg" },
+      { name: "Chilli Chicken", price: "₹240", imageUrl: "/images/placeholder-non-veg-starter.jpg", description: "Crispy fried chicken tossed generously with fierce red chillies and curry leaves." },
+      { name: "Dragon Chicken", price: "₹260", imageUrl: "/images/placeholder-non-veg-starter.jpg" },
+      { name: "Chicken Lollipop (6 pcs)", price: "₹260", imageUrl: "/images/placeholder-non-veg-starter.jpg" },
+      { name: "Drumstick Chicken", price: "₹250", imageUrl: "/images/placeholder-non-veg-starter.jpg" },
+      { name: "Devil Chicken (4 pcs)", price: "₹270", imageUrl: "/images/placeholder-non-veg-starter.jpg" },
+      { name: "Crispy Chicken", price: "₹250", imageUrl: "/images/placeholder-non-veg-starter.jpg" },
+      { name: "Pepper Chicken", price: "₹250", imageUrl: "/images/placeholder-non-veg-starter.jpg" },
+      { name: "Kaju Chicken", price: "₹260", imageUrl: "/images/placeholder-non-veg-starter.jpg" },
+      { name: "Paradise Spl Chicken Starter", price: "₹300", imageUrl: "/images/placeholder-non-veg-starter.jpg", description: "Our house special signature chicken starter." },
     ],
   },
   {
-    category: "Pulaos",
+    category: "Prawn & Fish",
     items: [
-      {
-        name: "Raju Gari Kodi Pulao",
-        nameTe: "రాజు గారి కోడి పులావ్",
-        imageUrl:
-          "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?q=80&w=2000&auto=format&fit=crop",
-        description:
-          "A Bhimavaram classic with juicy chicken, warm whole spices, and basmati grains kissed with saffron.",
-        price: "₹350",
-      },
+      { name: "Loose Prawns", price: "₹320", imageUrl: "/images/placeholder-seafood.jpg" },
+      { name: "Garlic Prawns", price: "₹320", imageUrl: "/images/placeholder-seafood.jpg" },
+      { name: "Chilli Prawn", price: "₹310", imageUrl: "/images/placeholder-seafood.jpg" },
+      { name: "Chilli Fish", price: "₹280", imageUrl: "/images/placeholder-seafood.jpg" },
+      { name: "Apollo Fish", price: "₹290", imageUrl: "/images/placeholder-seafood.jpg", description: "Boneless fish chunks marinated in fiery spices, deep-fried and tossed in a tangy yogurt sauce." },
+      { name: "Garlic Fish", price: "₹280", imageUrl: "/images/placeholder-seafood.jpg" },
     ],
   },
   {
-    category: "Fried Rice",
+    category: "Tandoori",
     items: [
-      {
-        name: "Special Chicken Fried Rice",
-        nameTe: "స్పెషల్ చికెన్ ఫ్రైడ్ రైస్",
-        imageUrl:
-          "https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=2000&auto=format&fit=crop",
-        description:
-          "Wok-tossed basmati with tender chicken, garden aromatics, and a luxe soy-garlic finish.",
-        price: "₹250",
-      },
-      {
-        name: "Double Egg Fried Rice",
-        nameTe: "డబుల్ ఎగ్ ఫ్రైడ్ రైస్",
-        imageUrl:
-          "https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=2000&auto=format&fit=crop",
-        description:
-          "Fluffy rice crowned with two buttery eggs, scallions, and a gentle spice glow.",
-        price: "₹220",
-      },
+      { name: "Paneer Tikka", price: "₹290", imageUrl: "/images/placeholder-tandoori.jpg" },
+      { name: "Malai Paneer Tikka", price: "₹300", imageUrl: "/images/placeholder-tandoori.jpg" },
+      { name: "Achari Paneer Tikka", price: "₹300", imageUrl: "/images/placeholder-tandoori.jpg" },
+      { name: "Pahadi Chicken Tikka", price: "₹270", imageUrl: "/images/placeholder-tandoori.jpg" },
+      { name: "Malai Chicken Tikka", price: "₹260", imageUrl: "/images/placeholder-tandoori.jpg" },
+      { name: "Chicken Tikka", price: "₹230", imageUrl: "/images/placeholder-tandoori.jpg" },
+      { name: "Reshmi Kabab", price: "₹300", imageUrl: "/images/placeholder-tandoori.jpg" },
+      { name: "Hariyali Tikka", price: "₹230", imageUrl: "/images/placeholder-tandoori.jpg" },
+      { name: "Lemon Chicken Tikka", price: "₹280", imageUrl: "/images/placeholder-tandoori.jpg" },
+      { name: "Tangdi Kabab", price: "₹280", imageUrl: "/images/placeholder-tandoori.jpg" },
+      { name: "Achari Chicken Tikka", price: "₹280", imageUrl: "/images/placeholder-tandoori.jpg" },
+      { name: "Tandoori Chicken", price: "Half ₹250 / Full ₹450", imageUrl: "/images/placeholder-tandoori.jpg" },
+      { name: "Paradise Spl Tandoori Chicken", price: "Half ₹300 / Full ₹500", imageUrl: "/images/placeholder-tandoori.jpg" },
+    ],
+  },
+  {
+    category: "Veg Curries",
+    items: [
+      { name: "Paneer Butter Masala", price: "₹240", imageUrl: "/images/placeholder-curry.jpg", description: "Soft cottage cheese cubes simmered in a rich, buttery tomato gravy with a hint of fenugreek." },
+      { name: "Kaju Tomato Curry", price: "₹250", imageUrl: "/images/placeholder-curry.jpg" },
+      { name: "Butter Paneer Curry", price: "₹200", imageUrl: "/images/placeholder-curry.jpg" },
+      { name: "Kadai Paneer Curry", price: "₹250", imageUrl: "/images/placeholder-curry.jpg" },
+      { name: "Paneer Do Pyaza Curry", price: "₹250", imageUrl: "/images/placeholder-curry.jpg" },
+      { name: "Mushroom Masala Curry", price: "₹200", imageUrl: "/images/placeholder-curry.jpg" },
+      { name: "Kaju Paneer Curry", price: "₹250", imageUrl: "/images/placeholder-curry.jpg" },
+      { name: "Dal Tadka & Fry", price: "₹150", imageUrl: "/images/placeholder-curry.jpg" },
+      { name: "Tomato Dal", price: "₹140", imageUrl: "/images/placeholder-curry.jpg" },
+      { name: "Palak Paneer Curry", price: "₹200", imageUrl: "/images/placeholder-curry.jpg" },
+    ],
+  },
+  {
+    category: "Non-Veg Curries",
+    items: [
+      { name: "Boneless Chicken Curry", price: "₹250", imageUrl: "/images/placeholder-curry.jpg" },
+      { name: "Hyderabadi Chicken Curry", price: "₹260", imageUrl: "/images/placeholder-curry.jpg" },
+      { name: "Butter Chicken Curry", price: "₹280", imageUrl: "/images/placeholder-curry.jpg" },
+      { name: "Kadai Chicken Curry", price: "₹260", imageUrl: "/images/placeholder-curry.jpg" },
+      { name: "Chicken Palli Palem Curry", price: "₹360", imageUrl: "/images/placeholder-curry.jpg" },
+      { name: "Chicken Do Pyaza Curry", price: "₹260", imageUrl: "/images/placeholder-curry.jpg" },
+      { name: "Chicken Tikka Masala Curry", price: "₹300", imageUrl: "/images/placeholder-curry.jpg" },
+      { name: "Mughlai Chicken Curry", price: "₹280", imageUrl: "/images/placeholder-curry.jpg" },
+      { name: "Paradise Spl Chicken Curry", price: "₹300", imageUrl: "/images/placeholder-curry.jpg" },
+      { name: "Punjabi Chicken Curry", price: "₹280", imageUrl: "/images/placeholder-curry.jpg" },
+      { name: "Mutton Rogan Josh", price: "₹310", imageUrl: "/images/placeholder-curry.jpg", description: "Tender mutton pieces slow-cooked in a vibrant, aromatic Kashmiri spiced gravy." },
+      { name: "Mutton Curry", price: "₹300", imageUrl: "/images/placeholder-curry.jpg" },
+      { name: "Prawn Curry", price: "₹280", imageUrl: "/images/placeholder-curry.jpg" },
+    ],
+  },
+  {
+    category: "Naan - Roties",
+    items: [
+      { name: "Tandoori Roti Plain", price: "₹30", imageUrl: "/images/placeholder-bread.jpg" },
+      { name: "Butter Roti", price: "₹40", imageUrl: "/images/placeholder-bread.jpg" },
+      { name: "Green Chilli Roti", price: "₹40", imageUrl: "/images/placeholder-bread.jpg" },
+      { name: "Plain Naan", price: "₹40", imageUrl: "/images/placeholder-bread.jpg" },
+      { name: "Butter Naan", price: "₹50", imageUrl: "/images/placeholder-bread.jpg" },
+      { name: "Garlic Naan", price: "₹60", imageUrl: "/images/placeholder-bread.jpg" },
+      { name: "Plain Kulcha", price: "₹40", imageUrl: "/images/placeholder-bread.jpg" },
+      { name: "Butter Kulcha", price: "₹50", imageUrl: "/images/placeholder-bread.jpg" },
+    ],
+  },
+  {
+    category: "Biryani",
+    items: [
+      { name: "Veg Biryani", price: "₹200", imageUrl: "/images/placeholder-biryani.jpg" },
+      { name: "Paneer Biryani", price: "₹240", imageUrl: "/images/placeholder-biryani.jpg" },
+      { name: "Mushroom Biryani", price: "₹240", imageUrl: "/images/placeholder-biryani.jpg" },
+      { name: "Chicken Dum Biryani", price: "Half ₹150 / Full ₹220", imageUrl: "/images/placeholder-biryani.jpg", description: "Layered with saffron and caramelized onions, sealed in traditional dum for a velvet, perfumed depth of flavor." },
+      { name: "Chicken Fry Piece Biryani", price: "Half ₹150 / Full ₹220", imageUrl: "/images/placeholder-biryani.jpg", description: "Fluffy dum biryani rice served generously with spicy, crispy pan-fried chicken pieces." },
+      { name: "Chicken Mughlai Biryani", price: "₹280", imageUrl: "/images/placeholder-biryani.jpg" },
+      { name: "Chicken 65 Biryani", price: "₹260", imageUrl: "/images/placeholder-biryani.jpg" },
+      { name: "Mixed Biryani", price: "₹350", imageUrl: "/images/placeholder-biryani.jpg" },
+      { name: "Mutton Fry Biryani", price: "₹380", imageUrl: "/images/placeholder-biryani.jpg" },
+      { name: "Fish Biryani", price: "₹280", imageUrl: "/images/placeholder-biryani.jpg" },
+      { name: "Punjabi Biryani", price: "₹300", imageUrl: "/images/placeholder-biryani.jpg" },
+      { name: "Dilkush Biryani", price: "₹480", imageUrl: "/images/placeholder-biryani.jpg" },
+      { name: "Paradise Spl Chicken Biryani", price: "₹380", imageUrl: "/images/placeholder-biryani.jpg" },
+      { name: "Spl Chicken Biryani", price: "₹280", imageUrl: "/images/placeholder-biryani.jpg" },
+    ],
+  },
+  {
+    category: "Fried Rice & Noodles",
+    items: [
+      { name: "Veg Fried Rice", price: "₹160", imageUrl: "/images/placeholder-fried-rice.jpg" },
+      { name: "Paneer Fried Rice", price: "₹220", imageUrl: "/images/placeholder-fried-rice.jpg" },
+      { name: "Mushroom Fried Rice", price: "₹200", imageUrl: "/images/placeholder-fried-rice.jpg" },
+      { name: "Jeera Fried Rice", price: "₹280", imageUrl: "/images/placeholder-fried-rice.jpg" },
+      { name: "Kaju Fried Rice", price: "₹220", imageUrl: "/images/placeholder-fried-rice.jpg" },
+      { name: "Paradise Spl Veg Fried Rice", price: "₹250", imageUrl: "/images/placeholder-fried-rice.jpg" },
+      { name: "Chicken Fried Rice", price: "₹200", imageUrl: "/images/placeholder-fried-rice.jpg" },
+      { name: "Egg Fried Rice", price: "₹180", imageUrl: "/images/placeholder-fried-rice.jpg" },
+      { name: "Schezwan Chicken Fried Rice", price: "₹210", imageUrl: "/images/placeholder-fried-rice.jpg" },
+      { name: "Schezwan Egg Fried Rice", price: "₹190", imageUrl: "/images/placeholder-fried-rice.jpg" },
+      { name: "Chicken Noodles", price: "₹170", imageUrl: "/images/placeholder-fried-rice.jpg" },
+      { name: "Egg Noodles", price: "₹150", imageUrl: "/images/placeholder-fried-rice.jpg" },
+      { name: "Special Chicken Fried Rice", price: "₹280", imageUrl: "/images/placeholder-fried-rice.jpg" },
+      { name: "Mixed Fried Rice", price: "₹300", imageUrl: "/images/placeholder-fried-rice.jpg" },
     ],
   },
 ] as const;
