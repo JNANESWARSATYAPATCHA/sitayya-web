@@ -3,6 +3,7 @@ import Heritage from "@/components/sections/Heritage";
 import Founders from "@/components/sections/Founders";
 import FullMenu from "@/components/sections/FullMenu";
 import Hero from "@/components/sections/Hero";
+import Reviews from "@/components/sections/Reviews";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <FullMenu />
       <Founders />
       <Heritage />
+      <Reviews />
     </main>
   );
 }
