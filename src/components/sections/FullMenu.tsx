@@ -70,9 +70,9 @@ export default function FullMenu() {
             key={item.name}
             title={getDisplayName(item)}
             subtitle={activeCategory}
-            description={item.description}
+            description={(item as any).description}
             imageUrl={item.imageUrl}
-            price={item.price}
+            price={(item as any).price}
           />
         ))}
       </div>
