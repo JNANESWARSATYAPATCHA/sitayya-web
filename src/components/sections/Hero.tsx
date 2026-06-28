@@ -100,7 +100,7 @@ export default function Hero() {
       </motion.p>
 
       <motion.div
-        className="relative z-20 mt-8 flex flex-wrap gap-4"
+        className="relative z-20 mt-8 flex flex-col sm:flex-row gap-4"
         variants={fadeIn}
         initial="hidden"
         whileInView="show"
@@ -108,7 +108,7 @@ export default function Hero() {
       >
         <motion.button
           type="button"
-          className="rounded-full bg-royal-gold px-6 py-3 text-sm font-semibold text-royal-dark transition"
+          className="w-full sm:w-auto rounded-full bg-royal-gold px-6 py-3 text-sm font-semibold text-royal-dark transition"
           whileHover={{ scale: 1.05, backgroundColor: "#E27D60" }}
           transition={{ type: "spring", stiffness: 220, damping: 16 }}
           viewport={viewport}
@@ -117,7 +117,7 @@ export default function Hero() {
         </motion.button>
         <motion.a
           href="#menu"
-          className="rounded-full border border-royal-gold/40 px-6 py-3 text-sm font-semibold text-royal-gold transition hover:border-royal-gold"
+          className="w-full sm:w-auto text-center rounded-full border border-royal-gold/40 px-6 py-3 text-sm font-semibold text-royal-gold transition hover:border-royal-gold"
           viewport={viewport}
         >
           Book a Table

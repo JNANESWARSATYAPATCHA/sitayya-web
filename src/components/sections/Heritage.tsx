@@ -36,23 +36,25 @@ export default function Heritage() {
         </div>
 
         <div className="relative">
-          <div className="absolute left-6 md:left-1/2 top-0 h-full w-px bg-gradient-to-b from-royal-gold/70 via-royal-gold/20 to-transparent md:-translate-x-1/2" />
+          {/* Desktop Timeline Line */}
+          <div className="hidden md:block absolute left-1/2 top-0 h-full w-px bg-gradient-to-b from-royal-gold/70 via-royal-gold/20 to-transparent -translate-x-1/2" />
 
-          <div className="space-y-8 md:space-y-10">
+          <div className="flex flex-col gap-6 md:gap-0 md:space-y-10">
             {heritageSteps.map((step, index) => {
               const isLeft = index % 2 === 0;
 
               return (
-                <div key={step.year} className="relative flex flex-col md:grid md:grid-cols-2">
+                <div key={step.year} className="relative md:grid md:grid-cols-2">
                   <div className="hidden md:block" />
                   <motion.article
-                    className={`relative ml-16 md:ml-0 rounded-3xl border border-white/10 bg-white/5 p-5 md:p-8 backdrop-blur whitespace-normal ${isLeft ? "md:col-start-1 md:mr-12" : "md:col-start-2 md:ml-12"}`}
+                    className={`relative rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8 backdrop-blur whitespace-normal ${isLeft ? "md:col-start-1 md:mr-12" : "md:col-start-2 md:ml-12"}`}
                     initial={{ opacity: 0, x: isLeft ? -60 : 60 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6, ease: "easeOut" }}
                     viewport={viewport}
                   >
-                    <div className={`absolute top-6 h-4 w-4 rounded-full border border-[#C5A059] bg-[#0A0A0A] -left-12 md:top-1/2 md:-translate-y-1/2 ${isLeft ? "md:left-auto md:-right-12 md:translate-x-[5px]" : "md:right-auto md:-left-12 md:-translate-x-[5px]"}`} />
+                    {/* Desktop Bullet */}
+                    <div className={`hidden md:block absolute top-1/2 h-4 w-4 rounded-full border border-[#C5A059] bg-[#0A0A0A] -translate-y-1/2 ${isLeft ? "left-auto -right-12 translate-x-[5px]" : "right-auto -left-12 -translate-x-[5px]"}`} />
                     <p className="text-sm uppercase tracking-[0.35em] text-royal-gold/80">
                       {step.year}
                     </p>

@@ -20,7 +20,7 @@ export default function Home() {
         </h2>
         <Link
           href="/menu"
-          className="mt-4 rounded-full bg-royal-gold px-8 py-3 text-sm font-semibold uppercase tracking-widest text-royal-dark transition hover:bg-white"
+          className="mt-4 w-full sm:w-auto rounded-full bg-royal-gold px-8 py-3 text-sm font-semibold uppercase tracking-widest text-royal-dark transition hover:bg-white"
         >
           Explore Our Full Menu
         </Link>
