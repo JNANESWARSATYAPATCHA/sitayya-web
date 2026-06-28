@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Playfair_Display } from "next/font/google";
 import Footer from "@/components/ui/Footer";
 import Navbar from "@/components/ui/Navbar";
@@ -22,6 +22,12 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Sitayya Family Restaurant",
   description: "A premium culinary experience rooted in heritage and craft.",
+};
+
+export const viewport: Viewport = {
+  width: 1280,
+  initialScale: 0.5,
+  maximumScale: 2.0,
 };
 
 export default function RootLayout({
