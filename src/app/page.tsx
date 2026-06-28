@@ -7,7 +7,7 @@ import Reviews from "@/components/sections/Reviews";
 
 export default function Home() {
   return (
-    <main className="mx-auto flex w-full max-w-6xl flex-col gap-12 md:gap-20 px-4 md:px-6 pb-12 md:pb-24 pt-8 md:pt-16 sm:px-10 lg:px-16 overflow-x-hidden">
+    <main className="mx-auto flex w-full max-w-6xl flex-col gap-12 md:gap-20 px-6 pb-12 md:pb-24 pt-8 md:pt-16 sm:px-10 lg:px-16 overflow-x-hidden">
       <Hero />
       <BentoGallery />
       
