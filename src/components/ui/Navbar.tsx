@@ -6,9 +6,9 @@ import { SitayyaLogo } from "@/components/ui/Logo";
 import { useLanguage } from "@/components/ui/LanguageContext";
 
 const navItems = [
-  { label: "Menu", href: "#menu" },
-  { label: "Heritage", href: "#heritage" },
-  { label: "Location", href: "#location" },
+  { label: "Menu", href: "/menu" },
+  { label: "Heritage", href: "/#heritage" },
+  { label: "Location", href: "/#location" },
 ];
 
 export default function Navbar() {
@@ -30,13 +30,13 @@ export default function Navbar() {
         </Link>
         <div className="flex flex-wrap items-center gap-6 text-sm text-white/70">
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.label}
               href={item.href}
               className="transition hover:text-white"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
           <button
             type="button"
