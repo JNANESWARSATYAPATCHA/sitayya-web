@@ -3,12 +3,12 @@ import RevealCard from "@/components/ui/RevealCard";
 
 export default function Founders() {
   return (
-    <section id="founders" className="py-24">
+    <section id="founders" className="py-10 md:py-24">
       <div className="flex flex-col gap-4">
         <p className="text-xs uppercase tracking-[0.35em] text-royal-gold/70">
           Heritage
         </p>
-        <h2 className="font-heading text-3xl text-royal-gold sm:text-4xl">
+        <h2 className="font-heading text-2xl text-royal-gold sm:text-3xl md:text-4xl">
           The Minds Behind Sitayya
         </h2>
       </div>

@@ -38,7 +38,7 @@ const headlineLines = [
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden rounded-3xl border border-white/10 bg-royal-dark px-6 py-12 shadow-[0_0_60px_rgba(197,160,89,0.08)] sm:px-10 sm:py-16">
+    <section className="relative overflow-hidden rounded-3xl border border-white/10 bg-royal-dark px-4 py-8 sm:px-6 sm:py-12 md:px-10 md:py-16 shadow-[0_0_60px_rgba(197,160,89,0.08)]">
       <video
         autoPlay
         loop
@@ -70,7 +70,7 @@ export default function Hero() {
           Sitayya Family Restaurant
       </motion.p>
       <motion.h1
-        className="relative z-20 mt-6 max-w-3xl font-heading text-4xl leading-tight text-royal-gold sm:text-5xl lg:text-6xl"
+        className="relative z-20 mt-6 max-w-3xl font-heading text-3xl leading-tight text-royal-gold sm:text-4xl md:text-5xl lg:text-6xl"
         variants={revealContainer}
         initial="hidden"
         whileInView="show"

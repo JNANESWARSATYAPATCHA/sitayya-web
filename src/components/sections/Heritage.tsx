@@ -24,13 +24,13 @@ const viewport = { once: true, margin: "-100px" };
 
 export default function Heritage() {
   return (
-    <section id="heritage" className="py-16 sm:py-20 lg:py-24">
-      <div className="mx-auto max-w-6xl px-6 sm:px-10 lg:px-16">
+    <section id="heritage" className="py-10 md:py-16 lg:py-24">
+      <div className="mx-auto max-w-6xl">
         <div className="mb-12 flex flex-col gap-3">
           <p className="text-xs uppercase tracking-[0.35em] text-royal-gold/70">
             Heritage Timeline
           </p>
-          <h2 className="font-heading text-3xl text-white sm:text-4xl">
+          <h2 className="font-heading text-2xl text-white sm:text-3xl md:text-4xl">
             Three defining moments in the Sitayya story.
           </h2>
         </div>

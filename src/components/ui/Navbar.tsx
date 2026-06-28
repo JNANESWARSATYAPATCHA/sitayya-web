@@ -28,7 +28,7 @@ export default function Navbar() {
             </span>
           </span>
         </Link>
-        <div className="flex flex-wrap items-center gap-6 text-sm text-white/70">
+        <div className="flex items-center gap-6 text-sm text-white/70 overflow-x-auto whitespace-nowrap pb-1 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
           {navItems.map((item) => (
             <Link
               key={item.label}

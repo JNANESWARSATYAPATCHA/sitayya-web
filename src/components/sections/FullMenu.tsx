@@ -39,11 +39,11 @@ export default function FullMenu() {
           <p className="text-xs uppercase tracking-[0.35em] text-royal-gold/70">
             Full Menu
           </p>
-          <h2 className="mt-3 font-heading text-3xl text-white sm:text-4xl">
+          <h2 className="mt-3 font-heading text-2xl text-white sm:text-3xl md:text-4xl">
             A curated selection of local signatures.
           </h2>
         </div>
-        <div className="flex flex-wrap gap-3">
+        <div className="flex gap-3 overflow-x-auto whitespace-nowrap pb-2 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
           {categories.map((category) => {
             const isActive = category === activeCategory;
             return (
@@ -64,7 +64,7 @@ export default function FullMenu() {
         </div>
       </div>
 
-      <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {activeItems.map((item) => (
           <RevealCard
             key={item.name}

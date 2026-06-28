@@ -45,7 +45,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: "// Google Analytics (gtag.js)" }}
         />
       </head>
-      <body className="min-h-full flex flex-col bg-[#0A0A0A] text-white antialiased font-body">
+      <body className="min-h-full flex flex-col bg-[#0A0A0A] text-white antialiased font-body overflow-x-hidden">
         <UrgencyBanner />
         <LanguageProvider>
           <SmoothScroll>
