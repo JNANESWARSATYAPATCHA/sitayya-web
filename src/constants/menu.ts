@@ -32,7 +32,7 @@ export const FULL_MENU = [
         name: "Apollo Fish",
         nameTe: "అపోలో ఫిష్",
         imageUrl:
-          "https://images.unsplash.com/photo-1596797038530-2c107229654b?q=80&w=2000&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1626074353765-517a681e40be?q=80&w=2000&auto=format&fit=crop",
         description:
           "Boneless fish chunks marinated in fiery spices, deep-fried and tossed in a tangy yogurt sauce.",
         price: "₹320",
@@ -41,7 +41,7 @@ export const FULL_MENU = [
         name: "Guntur Chilli Chicken",
         nameTe: "గుంటూరు చిల్లీ చికెన్",
         imageUrl:
-          "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=2000&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1623653387945-2fd25214f8fc?q=80&w=2000&auto=format&fit=crop",
         description:
           "Crispy fried chicken tossed generously with fierce Guntur red chillies and curry leaves.",
         price: "₹290",
@@ -64,7 +64,7 @@ export const FULL_MENU = [
         name: "Paneer Butter Masala",
         nameTe: "పనీర్ బటర్ మసాలా",
         imageUrl:
-          "https://images.unsplash.com/photo-1631452180519-c014fe946bc0?q=80&w=2000&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?q=80&w=2000&auto=format&fit=crop",
         description:
           "Soft cottage cheese cubes simmered in a rich, buttery tomato gravy with a hint of fenugreek.",
         price: "₹260",
@@ -142,7 +142,7 @@ export const FULL_MENU = [
         name: "Double Egg Fried Rice",
         nameTe: "డబుల్ ఎగ్ ఫ్రైడ్ రైస్",
         imageUrl:
-          "https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?q=80&w=2000&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=2000&auto=format&fit=crop",
         description:
           "Fluffy rice crowned with two buttery eggs, scallions, and a gentle spice glow.",
         price: "₹220",
