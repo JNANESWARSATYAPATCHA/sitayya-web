@@ -8,6 +8,7 @@ type RevealCardProps = {
   subtitle: string;
   description: string;
   imageUrl: string;
+  price?: string;
 };
 
 const titleVariants = {
@@ -25,6 +26,7 @@ export default function RevealCard({
   subtitle,
   description,
   imageUrl,
+  price,
 }: RevealCardProps) {
   return (
     <motion.article
@@ -55,7 +57,10 @@ export default function RevealCard({
           variants={detailVariants}
           transition={{ duration: 0.4, ease: "easeOut" }}
         >
-          <p className="text-white/70">{subtitle}</p>
+          <div className="flex items-center justify-between">
+            <p className="text-white/70">{subtitle}</p>
+            {price && <p className="font-semibold text-royal-gold">{price}</p>}
+          </div>
           <p>{description}</p>
         </motion.div>
       </div>

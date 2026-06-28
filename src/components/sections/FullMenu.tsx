@@ -6,7 +6,7 @@ import { FULL_MENU } from "@/constants/menu";
 import { useLanguage } from "@/components/ui/LanguageContext";
 import RevealCard from "@/components/ui/RevealCard";
 
-const categories = ["Biryanis", "Pulaos", "Fried Rice"] as const;
+const categories = ["Starters", "Curries", "Biryanis", "Pulaos", "Fried Rice"] as const;
 
 type Category = (typeof categories)[number];
 
@@ -18,7 +18,7 @@ export default function FullMenu() {
     return FULL_MENU.find((entry) => entry.category === activeCategory)?.items ?? [];
   }, [activeCategory]);
 
-  const getDisplayName = (item: { name: string; nameTe?: string }) =>
+  const getDisplayName = (item: { name: string; nameTe?: string; price?: string }) =>
     language === "te" && item.nameTe ? item.nameTe : item.name;
 
   return (
@@ -61,6 +61,7 @@ export default function FullMenu() {
             subtitle={activeCategory}
             description={item.description}
             imageUrl={item.imageUrl}
+            price={item.price}
           />
         ))}
       </div>

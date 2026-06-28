@@ -13,6 +13,7 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  // @ts-expect-error: 'eslint' is a valid Next.js config property but may be missing in current NextConfig types
   eslint: {
     ignoreDuringBuilds: true,
   },
