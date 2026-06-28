@@ -30,7 +30,7 @@ export default function RevealCard({
 }: RevealCardProps) {
   return (
     <motion.article
-      className="group relative h-[400px] overflow-hidden rounded-2xl"
+      className="group relative h-[250px] md:h-[400px] overflow-hidden rounded-2xl"
       initial="rest"
       animate="rest"
       whileHover="hover"
@@ -44,16 +44,16 @@ export default function RevealCard({
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
 
-      <div className="absolute inset-x-0 bottom-0 z-10 p-6">
+      <div className="absolute inset-x-0 bottom-0 z-10 p-3 md:p-6">
         <motion.h3
-          className="font-heading text-2xl text-white"
+          className="font-heading text-lg md:text-2xl text-white line-clamp-2"
           variants={titleVariants}
           transition={{ duration: 0.35, ease: "easeOut" }}
         >
           {title}
         </motion.h3>
         <motion.div
-          className="mt-3 space-y-2 text-sm text-white/80"
+          className="mt-1 md:mt-3 space-y-1 md:space-y-2 text-[10px] md:text-sm text-white/80"
           variants={detailVariants}
           transition={{ duration: 0.4, ease: "easeOut" }}
         >
@@ -61,7 +61,7 @@ export default function RevealCard({
             <p className="text-white/70">{subtitle}</p>
             {price && <p className="font-semibold text-royal-gold">{price}</p>}
           </div>
-          <p>{description}</p>
+          <p className="line-clamp-2 hidden sm:block">{description}</p>
         </motion.div>
       </div>
     </motion.article>
